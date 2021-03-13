@@ -36,4 +36,11 @@ class StringsSolverTests: XCTestCase {
     
     XCTAssertTrue(result, "Invalid result it should return true")
   }
+  
+  func testStringsSolver_whenHasUniqueValuesCalledCaseSensitiveData_returnsTrue() {
+    let result = sut.hasOnlyUniqueCharacters(word: "AaBbCc")
+    
+    XCTAssertTrue(result, "Invalid result it should return true")
+  }
+
 }
