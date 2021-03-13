@@ -3,4 +3,7 @@ This is a repo dedicating for me training on problem solving and unit tests my c
 
 # Learning objectives
 * UnitTests
-* Enhancing Strings Problem Solving
+* Strings Problem Solving
+* Numbers Problem Solving
+* Collections Problem Solving
+* Algorithms Problem Solving
