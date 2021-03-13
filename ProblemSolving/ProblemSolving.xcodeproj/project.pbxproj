@@ -14,7 +14,18 @@
 		EF580A8325FD44EE00144561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF580A8225FD44EE00144561 /* Assets.xcassets */; };
 		EF580A8625FD44EE00144561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF580A8425FD44EE00144561 /* LaunchScreen.storyboard */; };
 		EF580A8F25FD454D00144561 /* StringsSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF580A8E25FD454D00144561 /* StringsSolver.swift */; };
+		EF580A9F25FD48D800144561 /* StringsSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF580A9E25FD48D800144561 /* StringsSolverTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF580AA125FD48D800144561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF580A6E25FD44EC00144561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF580A7525FD44EC00144561;
+			remoteInfo = ProblemSolving;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EF580A7625FD44EC00144561 /* ProblemSolving.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProblemSolving.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,20 @@
 		EF580A8525FD44EE00144561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF580A8725FD44EE00144561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF580A8E25FD454D00144561 /* StringsSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsSolver.swift; sourceTree = "<group>"; };
+		EF580A9C25FD48D800144561 /* ProblemSolvingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProblemSolvingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF580A9E25FD48D800144561 /* StringsSolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsSolverTests.swift; sourceTree = "<group>"; };
+		EF580AA025FD48D800144561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EF580A7325FD44EC00144561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF580A9925FD48D700144561 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				EF580A7825FD44EC00144561 /* ProblemSolving */,
+				EF580A9D25FD48D800144561 /* ProblemSolvingTests */,
 				EF580A7725FD44EC00144561 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				EF580A7625FD44EC00144561 /* ProblemSolving.app */,
+				EF580A9C25FD48D800144561 /* ProblemSolvingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +91,15 @@
 				EF580A8E25FD454D00144561 /* StringsSolver.swift */,
 			);
 			path = ProblemSolving;
+			sourceTree = "<group>";
+		};
+		EF580A9D25FD48D800144561 /* ProblemSolvingTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF580A9E25FD48D800144561 /* StringsSolverTests.swift */,
+				EF580AA025FD48D800144561 /* Info.plist */,
+			);
+			path = ProblemSolvingTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +122,24 @@
 			productReference = EF580A7625FD44EC00144561 /* ProblemSolving.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EF580A9B25FD48D700144561 /* ProblemSolvingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF580AA325FD48D800144561 /* Build configuration list for PBXNativeTarget "ProblemSolvingTests" */;
+			buildPhases = (
+				EF580A9825FD48D700144561 /* Sources */,
+				EF580A9925FD48D700144561 /* Frameworks */,
+				EF580A9A25FD48D700144561 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF580AA225FD48D800144561 /* PBXTargetDependency */,
+			);
+			name = ProblemSolvingTests;
+			productName = ProblemSolvingTests;
+			productReference = EF580A9C25FD48D800144561 /* ProblemSolvingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +151,10 @@
 				TargetAttributes = {
 					EF580A7525FD44EC00144561 = {
 						CreatedOnToolsVersion = 12.1;
+					};
+					EF580A9B25FD48D700144561 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = EF580A7525FD44EC00144561;
 					};
 				};
 			};
@@ -118,6 +172,7 @@
 			projectRoot = "";
 			targets = (
 				EF580A7525FD44EC00144561 /* ProblemSolving */,
+				EF580A9B25FD48D700144561 /* ProblemSolvingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +185,13 @@
 				EF580A8625FD44EE00144561 /* LaunchScreen.storyboard in Resources */,
 				EF580A8325FD44EE00144561 /* Assets.xcassets in Resources */,
 				EF580A8125FD44EC00144561 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF580A9A25FD48D700144561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +209,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF580A9825FD48D700144561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF580A9F25FD48D800144561 /* StringsSolverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF580AA225FD48D800144561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF580A7525FD44EC00144561 /* ProblemSolving */;
+			targetProxy = EF580AA125FD48D800144561 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EF580A7F25FD44EC00144561 /* Main.storyboard */ = {
@@ -321,6 +399,44 @@
 			};
 			name = Release;
 		};
+		EF580AA425FD48D800144561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProblemSolvingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorylink.ProblemSolvingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProblemSolving.app/ProblemSolving";
+			};
+			name = Debug;
+		};
+		EF580AA525FD48D800144561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProblemSolvingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorylink.ProblemSolvingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProblemSolving.app/ProblemSolving";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -338,6 +454,15 @@
 			buildConfigurations = (
 				EF580A8B25FD44EE00144561 /* Debug */,
 				EF580A8C25FD44EE00144561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF580AA325FD48D800144561 /* Build configuration list for PBXNativeTarget "ProblemSolvingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF580AA425FD48D800144561 /* Debug */,
+				EF580AA525FD48D800144561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
