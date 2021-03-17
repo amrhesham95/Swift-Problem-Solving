@@ -28,4 +28,14 @@ class StringsSolver {
     
     String(word.lowercased().reversed()) == word.lowercased()
   }
+  
+  /// Check two strings against each other, and returns true if they contain the same characters in any order taking into account letter case.
+  ///
+  /// - Parameters:
+  ///   - firstWord: word to check against secondWord
+  ///   - secondWord: word to check against firstWord
+  func checkIfTwoWordsHasSameCharacters(firstWord: String, secondWord: String) -> Bool {
+    firstWord.sorted() == secondWord.sorted()
+  }
+
 }

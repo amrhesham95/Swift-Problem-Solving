@@ -64,16 +64,54 @@ class StringsSolverTests: XCTestCase {
     XCTAssertTrue(result, "The string “Rats live on no evil star” should return true.")
   }
   
-  func testStringsSolver_whenIsPalindromeCalledWithWord_3_returnsTrue() {
+  func testStringsSolver_whenIsPalindromeCalledWithWord_3_returnsFalse() {
     let result = sut.isPalindrome(word: "Never odd or even")
     
     XCTAssertFalse(result, "The string “Never odd or even” should return false; even though the letters are the same in reverse, the spaces are in different places.")
   }
   
-  func testStringsSolver_whenIsPalindromeCalledWithWord_4_returnsTrue() {
+  func testStringsSolver_whenIsPalindromeCalledWithWord_4_returnsFalse() {
     let result = sut.isPalindrome(word: "Hello, world")
     
     XCTAssertFalse(result, "The string “Hello, world” should return false because it reads “dlrow ,olleH” backwards.")
+  }
+
+  // MARK: - Do two strings contain the same characters?
+  
+  func testStringsSolver_whenCheckIfTwoWordsHasSameCharacters_1_returnsTrue() {
+    let result = sut.checkIfTwoWordsHasSameCharacters(firstWord: "abca", secondWord: "abca")
+    
+    XCTAssertTrue(result, "The strings “abca” and “abca” should return true.")
+  }
+
+  func testStringsSolver_whenCheckIfTwoWordsHasSameCharacters_2_returnsTrue() {
+    let result = sut.checkIfTwoWordsHasSameCharacters(firstWord: "abc", secondWord: "cba")
+    
+    XCTAssertTrue(result, "The strings “abc” and “cba” should return true.")
+  }
+  
+  func testStringsSolver_whenCheckIfTwoWordsHasSameCharacters_3_returnsTrue() {
+    let result = sut.checkIfTwoWordsHasSameCharacters(firstWord: "a1 b2", secondWord: "b1 a2")
+    
+    XCTAssertTrue(result, "The strings “a1 b2” and “b1 a2” should return true.")
+  }
+
+  func testStringsSolver_whenCheckIfTwoWordsHasSameCharacters_4_returnsFalse() {
+    let result = sut.checkIfTwoWordsHasSameCharacters(firstWord: "abc", secondWord: "abca")
+    
+    XCTAssertFalse(result, "The strings “abc” and “abca” should return false.")
+  }
+  
+  func testStringsSolver_whenCheckIfTwoWordsHasSameCharacters_5_returnsFalse() {
+    let result = sut.checkIfTwoWordsHasSameCharacters(firstWord: "abc", secondWord: "Abc")
+    
+    XCTAssertFalse(result, "The strings “abc” and “Abc” should return false.")
+  }
+  
+  func testStringsSolver_whenCheckIfTwoWordsHasSameCharacters_6_returnsFalse() {
+    let result = sut.checkIfTwoWordsHasSameCharacters(firstWord: "abc", secondWord: "cbAa")
+    
+    XCTAssertFalse(result, "The strings “abc” and “cbAa” should return false.")
   }
 
 
