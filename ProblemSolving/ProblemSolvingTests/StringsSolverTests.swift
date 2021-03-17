@@ -113,7 +113,26 @@ class StringsSolverTests: XCTestCase {
     
     XCTAssertFalse(result, "The strings “abc” and “cbAa” should return false.")
   }
+  
+  // MARK: - Count the characters
+  
+  func testStringsSolver_whenCountCharacterInWord_1_returnsTwo() {
+    let result = sut.countCharacterInWord(word: "The rain in Spain", character: "a")
+    
+    XCTAssertEqual(result, 2, "The letter “a” appears twice in “The rain in Spain”")
+  }
+  
+  func testStringsSolver_whenCountCharacterInWord_2_returnsFour() {
+    let result = sut.countCharacterInWord(word: "Mississippi", character: "i")
+    
+    XCTAssertEqual(result, 4, "The letter “i” appears four times in “Mississippi”.")
+  }
+
+  func testStringsSolver_whenCountCharacterInWord_3_returnsThree() {
+    let result = sut.countCharacterInWord(word: "Hacking with Swift", character: "i")
+    
+    XCTAssertEqual(result, 3, "The letter “i” appears three times in “Hacking with Swift”.")
+  }
 
 
 }
-

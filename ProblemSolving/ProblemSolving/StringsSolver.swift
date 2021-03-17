@@ -37,5 +37,14 @@ class StringsSolver {
   func checkIfTwoWordsHasSameCharacters(firstWord: String, secondWord: String) -> Bool {
     firstWord.sorted() == secondWord.sorted()
   }
-
+  
+  /// Count the characters, and returns how many times a specific character appears into a word, taking case into account.
+  ///
+  /// - Parameters:
+  ///   - word: word to check the character in
+  ///   - character: character to be counted for how many time it was repeated in a word
+  func countCharacterInWord(word: String, character: String) -> Int {
+    let modifiedWord = word.replacingOccurrences(of: character, with: "")
+    return word.count - modifiedWord.count
+  }
 }
