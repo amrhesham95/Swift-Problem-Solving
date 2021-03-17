@@ -42,5 +42,11 @@ class StringsSolverTests: XCTestCase {
     
     XCTAssertTrue(result, "Invalid result it should return true")
   }
-
+  
+  func testStringsSolver_whenHasUniqueValuesCalledWithWordWithRepeatedCharacters_returnsFalse() {
+    let result = sut.hasOnlyUniqueCharacters(word: "Hello, world")
+    
+    XCTAssertFalse(result, "Invalid result it should return false as there are two letters L")
+  }
+  
 }
