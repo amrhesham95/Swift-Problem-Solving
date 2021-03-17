@@ -19,4 +19,13 @@ class StringsSolver {
     let wordAsSet = Set(word)
     return wordAsSet.count == word.count
   }
+  
+  /// Check if word is a palindrome , returns true if the string reads the same when reversed, ignoring case.
+  ///
+  /// - Parameters:
+  ///   - word: word to check it's characaters
+  func isPalindrome(word: String) -> Bool {
+    
+    String(word.lowercased().reversed()) == word.lowercased()
+  }
 }
