@@ -56,4 +56,23 @@ class NumberSolver {
       return arr
   }
 
+  //https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
+  /// Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.
+  /// - Parameters:
+  ///   - n: integer to determine socks count
+  ///   - array: array representing sock to get it's pairs
+  func sockMerchant(n: Int, array: [Int]) -> Int {
+    var dictionary: Dictionary<Int, Int> = [:]
+    var pairs = 0
+    for (index, sock) in array.enumerated() {
+      if dictionary[sock] != nil {
+        pairs += 1
+        dictionary.removeValue(forKey: sock)
+      }else {
+        dictionary.updateValue(index, forKey: sock)
+      }
+    }
+    
+    return pairs
+  }
 }

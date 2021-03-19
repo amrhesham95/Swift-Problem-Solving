@@ -102,4 +102,32 @@ class NumberSolverTests: XCTestCase {
     // Then
     XCTAssertEqual(result, [1, 2, 3, 4], "the function should return [1, 2, 3, 4]")
   }
+  
+  // MARK: - how many pairs ?.
+  
+  func testNumberSolver_whenSockMerchantCalledWithData1_returnsThreePairs() {
+    
+    // Given
+    let array = [1, 2, 1, 2, 1, 3, 2]
+    let n = 7
+    
+    // When
+    let result = sut.sockMerchant(n: n, array: array)
+    
+    // Then
+    XCTAssertEqual(result, 2, "There is one pair of color 1, and one of color 2, There are three odd socks left, one of each color. The number of pairs is 2")
+  }
+  
+  func testNumberSolver_whenSockMerchantCalledWithData2_returnsThreePairs() {
+    
+    // Given
+    let array = [10, 20, 20, 10, 10, 30, 50, 10, 20]
+    let n = 9
+    
+    // When
+    let result = sut.sockMerchant(n: n, array: array)
+    
+    // Then
+    XCTAssertEqual(result, 3, "There is 2 pair of color 10, and one of color 20, There are 4 odd socks left, The number of pairs is 3")
+  }
 }
