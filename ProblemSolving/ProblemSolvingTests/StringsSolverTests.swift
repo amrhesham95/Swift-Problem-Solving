@@ -143,7 +143,7 @@ class StringsSolverTests: XCTestCase {
   }
   
   func testStringsSolver_whenRepeatedStringCalled_2_returns1000000000000() {
-    let result = sut.repeatedString(s: "aba", n: 1000000000000)
+    let result = sut.repeatedString(s: "a", n: 1000000000000)
     
     XCTAssertEqual(result, 1000000000000, "The first 1000000000000 letters of the infinite string are a. we return 1000000000000.")
   }
