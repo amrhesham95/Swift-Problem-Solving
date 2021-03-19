@@ -15,6 +15,8 @@
 		EF580A8625FD44EE00144561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF580A8425FD44EE00144561 /* LaunchScreen.storyboard */; };
 		EF580A8F25FD454D00144561 /* StringsSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF580A8E25FD454D00144561 /* StringsSolver.swift */; };
 		EF580A9F25FD48D800144561 /* StringsSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF580A9E25FD48D800144561 /* StringsSolverTests.swift */; };
+		EF5B0E5D2604F0BA00914D59 /* NumberSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B0E5C2604F0BA00914D59 /* NumberSolver.swift */; };
+		EF5B0E612604F13E00914D59 /* NumberSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B0E602604F13E00914D59 /* NumberSolverTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		EF580A9C25FD48D800144561 /* ProblemSolvingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProblemSolvingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF580A9E25FD48D800144561 /* StringsSolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsSolverTests.swift; sourceTree = "<group>"; };
 		EF580AA025FD48D800144561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF5B0E5C2604F0BA00914D59 /* NumberSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSolver.swift; sourceTree = "<group>"; };
+		EF5B0E602604F13E00914D59 /* NumberSolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSolverTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 				EF580A8425FD44EE00144561 /* LaunchScreen.storyboard */,
 				EF580A8725FD44EE00144561 /* Info.plist */,
 				EF580A8E25FD454D00144561 /* StringsSolver.swift */,
+				EF5B0E5C2604F0BA00914D59 /* NumberSolver.swift */,
 			);
 			path = ProblemSolving;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 			children = (
 				EF580A9E25FD48D800144561 /* StringsSolverTests.swift */,
 				EF580AA025FD48D800144561 /* Info.plist */,
+				EF5B0E602604F13E00914D59 /* NumberSolverTests.swift */,
 			);
 			path = ProblemSolvingTests;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5B0E5D2604F0BA00914D59 /* NumberSolver.swift in Sources */,
 				EF580A7E25FD44EC00144561 /* ViewController.swift in Sources */,
 				EF580A7A25FD44EC00144561 /* AppDelegate.swift in Sources */,
 				EF580A7C25FD44EC00144561 /* SceneDelegate.swift in Sources */,
@@ -214,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF580A9F25FD48D800144561 /* StringsSolverTests.swift in Sources */,
+				EF5B0E612604F13E00914D59 /* NumberSolverTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
