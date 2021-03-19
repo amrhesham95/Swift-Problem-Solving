@@ -130,4 +130,30 @@ class NumberSolverTests: XCTestCase {
     // Then
     XCTAssertEqual(result, 3, "There is 2 pair of color 10, and one of color 20, There are 4 odd socks left, The number of pairs is 3")
   }
+  
+  func testNumberSolver_whenJumpingOnCloudsData1_returnsThree() {
+    
+    // Given
+    let array = [0, 0, 0, 0, 1, 0]
+    
+    // When
+    let result = sut.jumpingOnClouds(clouds: array)
+    
+    // Then
+    XCTAssertEqual(result, 3, " The game can be won in 3 jumps")
+  }
+  
+  func testNumberSolver_whenJumpingOnCloudsData2_returnsFour() {
+    
+    // Given
+    let array = [0, 0, 1, 0, 0, 1, 0]
+    
+    // When
+    let result = sut.jumpingOnClouds(clouds: array)
+    
+    // Then
+    XCTAssertEqual(result, 4, "The game can be won in 4 jumps")
+  }
+
+
 }
