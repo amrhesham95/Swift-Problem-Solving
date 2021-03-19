@@ -134,5 +134,18 @@ class StringsSolverTests: XCTestCase {
     XCTAssertEqual(result, 3, "The letter “i” appears three times in “Hacking with Swift”.")
   }
 
+  // MARK: - Repeated String
+  
+  func testStringsSolver_whenRepeatedStringCalled_1_returnsSeven() {
+    let result = sut.repeatedString(s: "aba", n: 10)
+    
+    XCTAssertEqual(result, 7, "The first 10 letters of the infinite string are abaabaabaa. Because there are 7 a's, we return 7.")
+  }
+  
+  func testStringsSolver_whenRepeatedStringCalled_2_returns1000000000000() {
+    let result = sut.repeatedString(s: "aba", n: 1000000000000)
+    
+    XCTAssertEqual(result, 1000000000000, "The first 1000000000000 letters of the infinite string are a. we return 1000000000000.")
+  }
 
 }

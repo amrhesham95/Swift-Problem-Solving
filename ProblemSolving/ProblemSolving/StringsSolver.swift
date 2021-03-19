@@ -47,4 +47,30 @@ class StringsSolver {
     let modifiedWord = word.replacingOccurrences(of: character, with: "")
     return word.count - modifiedWord.count
   }
+  
+  /*
+   There is a string, s, of lowercase English letters that is repeated infinitely many times. Given an integer, n, find and print the number of letter a's in the first n letters of the infinite string.
+   Example
+      s = abcac
+      n = 10
+   The substring we consider is , abcacabcac the first  characters of the infinite string. There are  4 occurrences of a in the substring.
+   */
+  
+  /// Count the characters, and returns the frequency of a in the substring
+  ///
+  /// - Parameters:
+  ///   - s: The infinitely repeated string
+  ///   - n: number to determine the substring to search in
+  func repeatedString(s: String, n: Int) -> Int {
+    if s.count == 1 {return n}
+    var wordAsArray = Array(s)
+    var reptitions = 0
+    while wordAsArray.count < n {
+      wordAsArray.append(contentsOf: s)
+    }
+    for index in 0 ..< n {
+      reptitions = wordAsArray[index] == "a" ? reptitions + 1 : reptitions
+    }
+    return reptitions
+  }
 }
