@@ -63,11 +63,43 @@ class NumberSolverTests: XCTestCase {
   }
 
   // MARK: - CyclicRotation
-
-//  func testNumberSolver_whenBinaryGapFor32WasCalled_returnsLargestGapOfZero() {
-//    let result = sut.binaryGapFor(32)
-//
-//    XCTAssertEqual(result, 0, "The number 32 has binary representation 100000 and has no binary gaps")
-//  }
-
+  
+  func testNumberSolver_whenCyclicRotation1Called_returnsExpectedArray() {
+    
+    // Given
+    let array = [3, 8, 9, 7, 6]
+    let numberOfRotations = 3
+    
+    // When
+    let result = sut.cyclicRotation(array, numberOfRotations)
+    
+    // Then
+    XCTAssertEqual(result, [9, 7, 6, 3, 8], "the function should return [9, 7, 6, 3, 8]")
+  }
+  
+  func testNumberSolver_whenCyclicRotation2Called_returnsExpectedArray() {
+    
+    // Given
+    let array = [0, 0, 0]
+    let numberOfRotations = 1
+    
+    // When
+    let result = sut.cyclicRotation(array, numberOfRotations)
+    
+    // Then
+    XCTAssertEqual(result, [0, 0, 0], "the function should return [0, 0, 0]")
+  }
+  
+  func testNumberSolver_whenCyclicRotation3Called_returnsExpectedArray() {
+    
+    // Given
+    let array = [1, 2, 3, 4]
+    let numberOfRotations = 4
+    
+    // When
+    let result = sut.cyclicRotation(array, numberOfRotations)
+    
+    // Then
+    XCTAssertEqual(result, [1, 2, 3, 4], "the function should return [1, 2, 3, 4]")
+  }
 }

@@ -41,4 +41,19 @@ class NumberSolver {
     }
     return maxGap
   }
+  
+  /// Rotate an array to the right by a given number of steps.
+  ///
+  /// - Parameters:
+  ///   - array: array of numbers to be rotated
+  ///   - rotationsCount: integer to determine number of rotations
+  public func cyclicRotation(_ array : [Int], _ rotationsCount :Int) -> [Int] {
+    var arr: [Int] = Array(repeating: 0, count: array.count)
+      // write your code in Swift 4.2.1 (Linux)
+      for index in 0 ..< array.count {
+        arr[ (index + rotationsCount) % array.count ] = array[index]
+      }
+      return arr
+  }
+
 }
