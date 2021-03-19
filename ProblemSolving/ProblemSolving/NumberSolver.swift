@@ -75,4 +75,34 @@ class NumberSolver {
     
     return pairs
   }
+  
+  // https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup&h_r=next-challenge&h_v=zen
+  /*
+   There is a new mobile game that starts with consecutively numbered clouds. Some of the clouds are thunderheads and others are cumulus. The player can jump on any cumulus cloud having a number that is equal to the number of the current cloud plus 1 or 2 The player must avoid the thunderheads. Determine the minimum number of jumps it will take to jump from the starting postion to the last cloud. It is always possible to win the game.
+
+   For each game, you will get an array of clouds numbered 0 if they are safe or 1 if they must be avoided.
+
+   Example
+
+   Index the array from 0 ...6 The number on each cloud is its index in the list so the player must avoid the clouds at indices 1 and 5 They could follow these two paths: 0 - 2 - 4 - 6 or 0 - 2 - 3 - 4 - 6 The first path takes 2 jumps while the second takes 4 Return 3
+
+   */
+  
+  /// Given an array of integers representing the clouds, determine the minimum number of jumps required to win
+  /// - Parameters:
+  ///   - clouds: the clouds as array of zeros and ones
+  ///
+  func jumpingOnClouds(clouds: [Int]) -> Int {
+    var currentCloud = 0
+    var numberOfJumps = 0
+    while currentCloud != clouds.count - 1 {
+      if currentCloud + 2 < clouds.count && clouds[currentCloud + 2] == 0 {
+        currentCloud = currentCloud + 2
+      } else {
+        currentCloud = currentCloud + 1
+      }
+      numberOfJumps += 1
+    }
+    return numberOfJumps
+  }
 }
