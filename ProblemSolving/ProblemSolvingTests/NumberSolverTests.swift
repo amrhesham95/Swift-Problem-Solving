@@ -155,5 +155,32 @@ class NumberSolverTests: XCTestCase {
     XCTAssertEqual(result, 4, "The game can be won in 4 jumps")
   }
 
+  // MARK: - Left Rotation
+  
+  func testNumberSolver_whenRotLeftWithData1_returnsCorrectArray() {
+    
+    // Given
+    let array = [1, 2, 3, 4, 5]
+    
+    // When
+    let result = sut.rotLeft(a: array, d: 4)
+    
+    // Then
+    XCTAssertEqual(result, [5, 1, 2, 3, 4], "Expected Output was [5, 1, 2, 3, 4]")
+  }
+  
+  func testNumberSolver_whenRotLeftWithData2_returnsCorrectArray() {
+    //41 73 89 7 10 1 59 58 84 77 77 97 58 1 86 58 26 10 86 51
+    // Given
+    let array = [41, 73, 89, 7, 10, 1, 59, 58, 84, 77, 77, 97, 58, 1, 86, 58, 26, 10, 86, 51]
+    
+    // When
+    let result = sut.rotLeft(a: array, d: 10)
+    
+    // Then
+    XCTAssertEqual(result, [77, 97, 58, 1, 86, 58, 26, 10, 86, 51, 41, 73, 89, 7, 10, 1, 59, 58, 84, 77], "Expected Output was [77, 97, 58, 1, 86, 58, 26, 10, 86, 51, 41, 73, 89, 7, 10, 1, 59, 58, 84, 77]")
+  }
+
+
 
 }
