@@ -29,6 +29,14 @@ class NumberSolver {
     }
   }
   
+  /// Write a function that accepts positive minimum and maximum integers, and returns a random number between those two bounds, inclusive.
+  /// - Parameters:
+  ///   - min: minimum bound
+  ///   - max: maximum bound
+  func randomNumberFrom(_ min: Int, to max: Int) -> UInt32 {
+    return arc4random_uniform( UInt32(max - min + 1) ) + UInt32(min)
+  }
+  
   /// A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.
   ///
   /// - Parameters:

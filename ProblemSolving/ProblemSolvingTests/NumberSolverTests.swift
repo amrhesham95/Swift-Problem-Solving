@@ -180,4 +180,21 @@ class NumberSolverTests: XCTestCase {
     // Then
     XCTAssertEqual(result, [77, 97, 58, 1, 86, 58, 26, 10, 86, 51, 41, 73, 89, 7, 10, 1, 59, 58, 84, 77], "Expected Output was [77, 97, 58, 1, 86, 58, 26, 10, 86, 51, 41, 73, 89, 7, 10, 1, 59, 58, 84, 77]")
   }
+  
+  func testRandomNumber_returnValueInRange() {
+    // Given
+    let min = 1
+    let max = 5
+    var numberExistsInRange = false
+    
+    // When
+    let randomNumber = sut.randomNumberFrom(min, to: max)
+    
+    // Then
+    for number in min...max {
+      if number == randomNumber { numberExistsInRange = true}
+    }
+    print("number is: \(randomNumber)")
+    XCTAssertTrue(numberExistsInRange)
+  }
 }
