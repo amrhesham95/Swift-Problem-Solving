@@ -35,8 +35,31 @@ class NumberSolver {
   ///   - max: maximum bound
   func randomNumberFrom(_ min: Int, to max: Int) -> UInt32 {
     return arc4random_uniform( UInt32(max - min + 1) ) + UInt32(min)
+    
   }
   
+  /// a function that accepts positive two integers, and raises the first to the power of the second.
+  func myPow(number: Int, power: Int) -> Int {
+    guard number > 0, power > 0 else { return 0 }
+    var returnValue = number
+    
+    for _ in 1..<power {
+      returnValue *= number
+    }
+    
+    return returnValue
+  }
+  
+  /// a function that accepts positive two integers, and raises the first to the power of the second.
+  func myPowRecursion(number: Int, power: Int) -> Int {
+    if power == 0 { return 1 }
+    guard number > 0, power > 0 else { return 0 }
+    if power == 1 { return number}
+    
+    return number * myPowRecursion(number: number, power: power - 1)
+  }
+
+
   /// A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.
   ///
   /// - Parameters:

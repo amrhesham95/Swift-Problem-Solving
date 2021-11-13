@@ -197,4 +197,61 @@ class NumberSolverTests: XCTestCase {
     print("number is: \(randomNumber)")
     XCTAssertTrue(numberExistsInRange)
   }
+  
+  func testMyPow_whenNegativeNumberUsed_zeroIsReturned() {
+    // When
+    let number = sut.myPow(number: -1, power: 5)
+    
+    // Then
+    XCTAssertEqual(number, 0)
+  }
+  
+  func testMyPow_wheninputs4and3_shouldreturn64() {
+    // When
+    let number = sut.myPow(number: 4, power: 3)
+    
+    // Then
+    XCTAssertEqual(number, 64)
+  }
+  
+  func testMyPow_wheninputs2and8_shouldreturn256() {
+    // When
+    let number = sut.myPow(number: 2, power: 8)
+    
+    // Then
+    XCTAssertEqual(number, 256)
+  }
+  
+  func testMyPowRecursion_whenNegativeNumberUsed_zeroIsReturned() {
+    // When
+    let number = sut.myPowRecursion(number: -1, power: 5)
+    
+    // Then
+    XCTAssertEqual(number, 0)
+  }
+  
+  func testMyPowRecursion_wheninputs4and3_shouldreturn64() {
+    // When
+    let number = sut.myPowRecursion(number: 4, power: 3)
+    
+    // Then
+    XCTAssertEqual(number, 64)
+  }
+  
+  func testMyPowRecursion_wheninputs2and8_shouldreturn256() {
+    // When
+    let number = sut.myPowRecursion(number: 2, power: 8)
+    
+    // Then
+    XCTAssertEqual(number, 256)
+  }
+  
+  func testMyPowRecursion_wheninputsIsNumberToPowerZero_shouldreturn1() {
+    // When
+    let number = sut.myPowRecursion(number: 2, power: 0)
+    
+    // Then
+    XCTAssertEqual(number, 1)
+  }
+
 }
