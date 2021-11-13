@@ -11,6 +11,24 @@ import Foundation
 //
 class NumberSolver {
   
+  /// a function that counts from 1 through 100, and prints “Fizz” if the counter is evenly divisible by 3, “Buzz” if it’s evenly divisible by 5, “Fizz Buzz” if it’s even divisible by three and five, or the counter number for all other cases.
+  func fizzBuzzNumbers() {
+    for number in 1...100 {
+      if ( (number % 3  == 0) && (number % 5  == 0) ) {
+        print("Fizz Buzz")
+      }
+      else if (number % 3  == 0) {
+        print("Fizz")
+      }
+      else if (number % 5  == 0) {
+        print("Buzz")
+      }
+      else {
+        print(number)
+      }
+    }
+  }
+  
   /// A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.
   ///
   /// - Parameters:
@@ -49,13 +67,13 @@ class NumberSolver {
   ///   - rotationsCount: integer to determine number of rotations
   public func cyclicRotation(_ array : [Int], _ rotationsCount :Int) -> [Int] {
     var arr: [Int] = Array(repeating: 0, count: array.count)
-      // write your code in Swift 4.2.1 (Linux)
-      for index in 0 ..< array.count {
-        arr[ (index + rotationsCount) % array.count ] = array[index]
-      }
-      return arr
+    // write your code in Swift 4.2.1 (Linux)
+    for index in 0 ..< array.count {
+      arr[ (index + rotationsCount) % array.count ] = array[index]
+    }
+    return arr
   }
-
+  
   //https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
   /// Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.
   /// - Parameters:
@@ -79,13 +97,13 @@ class NumberSolver {
   // https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup&h_r=next-challenge&h_v=zen
   /*
    There is a new mobile game that starts with consecutively numbered clouds. Some of the clouds are thunderheads and others are cumulus. The player can jump on any cumulus cloud having a number that is equal to the number of the current cloud plus 1 or 2 The player must avoid the thunderheads. Determine the minimum number of jumps it will take to jump from the starting postion to the last cloud. It is always possible to win the game.
-
+   
    For each game, you will get an array of clouds numbered 0 if they are safe or 1 if they must be avoided.
-
+   
    Example
-
+   
    Index the array from 0 ...6 The number on each cloud is its index in the list so the player must avoid the clouds at indices 1 and 5 They could follow these two paths: 0 - 2 - 4 - 6 or 0 - 2 - 3 - 4 - 6 The first path takes 2 jumps while the second takes 4 Return 3
-
+   
    */
   
   /// Given an array of integers representing the clouds, determine the minimum number of jumps required to win
@@ -108,7 +126,7 @@ class NumberSolver {
   
   
   /*A left rotation operation on an array shifts each of the array's elements 1 unit to the left. For example, if 2 left rotations are performed on array [1, 2, 3, 4, 5], then the array would become [3, 4, 5, 1, 2]. Note that the lowest index item moves to the highest index in a rotation. This is called a circular array.
-  .*/
+   .*/
   
   ///  Given an array a of n integers and a number ,d , perform d left rotations on the array, return the updated array to be printed as a single line of space-separated integers
   /// - Parameters:
