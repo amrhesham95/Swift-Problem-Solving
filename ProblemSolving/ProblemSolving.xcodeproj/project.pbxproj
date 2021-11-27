@@ -17,6 +17,7 @@
 		EF580A9F25FD48D800144561 /* StringsSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF580A9E25FD48D800144561 /* StringsSolverTests.swift */; };
 		EF5B0E5D2604F0BA00914D59 /* NumberSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B0E5C2604F0BA00914D59 /* NumberSolver.swift */; };
 		EF5B0E612604F13E00914D59 /* NumberSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B0E602604F13E00914D59 /* NumberSolverTests.swift */; };
+		EFFEDF4C2752562F00E6C5E7 /* SwapTwoNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFEDF4B2752562F00E6C5E7 /* SwapTwoNumbersTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		EF580AA025FD48D800144561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF5B0E5C2604F0BA00914D59 /* NumberSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSolver.swift; sourceTree = "<group>"; };
 		EF5B0E602604F13E00914D59 /* NumberSolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSolverTests.swift; sourceTree = "<group>"; };
+		EFFEDF4B2752562F00E6C5E7 /* SwapTwoNumbersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapTwoNumbersTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				EF580A9E25FD48D800144561 /* StringsSolverTests.swift */,
 				EF580AA025FD48D800144561 /* Info.plist */,
 				EF5B0E602604F13E00914D59 /* NumberSolverTests.swift */,
+				EFFEDF4B2752562F00E6C5E7 /* SwapTwoNumbersTests.swift */,
 			);
 			path = ProblemSolvingTests;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF580A9F25FD48D800144561 /* StringsSolverTests.swift in Sources */,
+				EFFEDF4C2752562F00E6C5E7 /* SwapTwoNumbersTests.swift in Sources */,
 				EF5B0E612604F13E00914D59 /* NumberSolverTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
