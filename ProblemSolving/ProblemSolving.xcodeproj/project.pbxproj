@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF37C0772756221800B4A0EA /* NumberIsPrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF37C0762756221800B4A0EA /* NumberIsPrime.swift */; };
 		EF580A7A25FD44EC00144561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF580A7925FD44EC00144561 /* AppDelegate.swift */; };
 		EF580A7C25FD44EC00144561 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF580A7B25FD44EC00144561 /* SceneDelegate.swift */; };
 		EF580A7E25FD44EC00144561 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF580A7D25FD44EC00144561 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF37C0762756221800B4A0EA /* NumberIsPrime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberIsPrime.swift; sourceTree = "<group>"; };
 		EF580A7625FD44EC00144561 /* ProblemSolving.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProblemSolving.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF580A7925FD44EC00144561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF580A7B25FD44EC00144561 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				EF580AA025FD48D800144561 /* Info.plist */,
 				EF5B0E602604F13E00914D59 /* NumberSolverTests.swift */,
 				EFFEDF4B2752562F00E6C5E7 /* SwapTwoNumbersTests.swift */,
+				EF37C0762756221800B4A0EA /* NumberIsPrime.swift */,
 			);
 			path = ProblemSolvingTests;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF37C0772756221800B4A0EA /* NumberIsPrime.swift in Sources */,
 				EF580A9F25FD48D800144561 /* StringsSolverTests.swift in Sources */,
 				EFFEDF4C2752562F00E6C5E7 /* SwapTwoNumbersTests.swift in Sources */,
 				EF5B0E612604F13E00914D59 /* NumberSolverTests.swift in Sources */,
