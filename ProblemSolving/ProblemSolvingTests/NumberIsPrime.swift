@@ -7,6 +7,8 @@
 
 import XCTest
 
+// MARK: - Challenge 20: Number is prime
+//
 class NumberIsPrime: XCTestCase {
     
     /// a function that accepts an integer as its parameter and returns true if the number is prime.
