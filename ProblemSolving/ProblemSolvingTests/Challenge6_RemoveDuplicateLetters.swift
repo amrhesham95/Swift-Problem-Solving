@@ -7,7 +7,7 @@
 
 import XCTest
 
-class Challeng6_RemoveDuplicateLetters: XCTestCase {
+class Challenge6_RemoveDuplicateLetters: XCTestCase {
 
     /// a function that accepts a string as its input, and returns the same string just with duplicate letters removed.
     /// - Parameters:
