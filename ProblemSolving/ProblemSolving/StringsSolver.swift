@@ -28,6 +28,22 @@ class StringsSolver {
     
     String(word.lowercased().reversed()) == word.lowercased()
   }
+    
+    /// Check if word is a palindrome , returns true if the string reads the same when reversed, ignoring case.
+    ///
+    /// - Parameters:
+    ///   - word: word to check it's characaters
+    func isPalindrome2(word: String) -> Bool {
+        let n = word.count / 2
+        let wordAsArray = Array(word.lowercased())
+        for index in 0...n {
+            if wordAsArray[index] != wordAsArray[((word.count - 1) - index)] {
+                return false
+            }
+        }
+        return true
+    }
+
   
   /// Check two strings against each other, and returns true if they contain the same characters in any order taking into account letter case.
   ///
@@ -73,4 +89,14 @@ class StringsSolver {
     }
     return reptitions
   }
+    
+    /// Write your own version of the contains() method on String that ignores letter case, and without using the existing contains() method.
+    ///
+    /// - Parameters:
+    ///   - s: The infinitely repeated string
+    ///   - n: number to determine the substring to search in
+    func fuzzyContains(firstWord: String, secondWord: String) -> Bool {
+        return firstWord.uppercased().range(of: secondWord.uppercased()) != nil
+    }
+
 }
