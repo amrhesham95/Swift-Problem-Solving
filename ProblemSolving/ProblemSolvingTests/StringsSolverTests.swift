@@ -148,10 +148,14 @@ class StringsSolverTests: XCTestCase {
     XCTAssertEqual(result, 1000000000000, "The first 1000000000000 letters of the infinite string are a. we return 1000000000000.")
   }
   
-  func testStringsSolver_whenRepeatedStringCalled_2_returns1000000000000() {
-    let result = sut.repeatedString(s: "a", n: 1000000000000)
-    
-    XCTAssertEqual(result, 1000000000000, "The first 1000000000000 letters of the infinite string are a. we return 1000000000000.")
+  func testStringsSolver_whenFuzzyContainsCalled_1_returnsTrue() {
+    XCTAssertTrue(sut.fuzzyContains(firstWord: "Hello, world", secondWord: "Hello"))
   }
   
+  func testStringsSolver_whenFuzzyContainsCalled_2_returnsTrue() {
+    XCTAssertTrue(sut.fuzzyContains(firstWord: "Hello, world", secondWord: "WORLD"))  }
+
+  func testStringsSolver_whenFuzzyContainsCalled_3_returnsFalse() {
+    XCTAssertFalse(sut.fuzzyContains(firstWord: "Hello, world", secondWord: "Goodbye"))
+  }
 }

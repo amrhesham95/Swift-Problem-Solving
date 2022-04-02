@@ -96,7 +96,7 @@ class StringsSolver {
     ///   - s: The infinitely repeated string
     ///   - n: number to determine the substring to search in
     func fuzzyContains(firstWord: String, secondWord: String) -> Bool {
-        return firstWord.uppercased().range(of: secondWord.uppercased()) != nil
+      return firstWord.range(of: secondWord, options: .caseInsensitive) != nil
     }
 
 }
