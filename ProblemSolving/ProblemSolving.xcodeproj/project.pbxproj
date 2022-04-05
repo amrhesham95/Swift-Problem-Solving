@@ -23,6 +23,7 @@
 		EFFEDF4C2752562F00E6C5E7 /* SwapTwoNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFEDF4B2752562F00E6C5E7 /* SwapTwoNumbersTests.swift */; };
 		EFFF717727FC8A2600917A57 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFF717627FC8A2500917A57 /* ContainerWithMostWater.swift */; };
 		EFFF717927FCD76500917A57 /* Challenge21_CountingBinaryOnes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFF717827FCD76500917A57 /* Challenge21_CountingBinaryOnes.swift */; };
+		EFFF717B27FCEBCC00917A57 /* MergeIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFF717A27FCEBCC00917A57 /* MergeIntervals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		EFFEDF4B2752562F00E6C5E7 /* SwapTwoNumbersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapTwoNumbersTests.swift; sourceTree = "<group>"; };
 		EFFF717627FC8A2500917A57 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		EFFF717827FCD76500917A57 /* Challenge21_CountingBinaryOnes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge21_CountingBinaryOnes.swift; sourceTree = "<group>"; };
+		EFFF717A27FCEBCC00917A57 /* MergeIntervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeIntervals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				EF301D5A27577FA30075062D /* Challenge7_Condense_Whitespace.swift */,
 				EFFF717627FC8A2500917A57 /* ContainerWithMostWater.swift */,
 				EFFF717827FCD76500917A57 /* Challenge21_CountingBinaryOnes.swift */,
+				EFFF717A27FCEBCC00917A57 /* MergeIntervals.swift */,
 			);
 			path = ProblemSolvingTests;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				EF37C079275629DB00B4A0EA /* Challenge6_RemoveDuplicateLetters.swift in Sources */,
 				EF580A9F25FD48D800144561 /* StringsSolverTests.swift in Sources */,
 				EFFEDF4C2752562F00E6C5E7 /* SwapTwoNumbersTests.swift in Sources */,
+				EFFF717B27FCEBCC00917A57 /* MergeIntervals.swift in Sources */,
 				EFFF717927FCD76500917A57 /* Challenge21_CountingBinaryOnes.swift in Sources */,
 				EF5B0E612604F13E00914D59 /* NumberSolverTests.swift in Sources */,
 				EF301D5B27577FA30075062D /* Challenge7_Condense_Whitespace.swift in Sources */,
