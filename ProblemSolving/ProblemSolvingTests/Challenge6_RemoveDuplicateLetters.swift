@@ -23,6 +23,17 @@ class Challenge6_RemoveDuplicateLetters: XCTestCase {
         }
         return String(used)
     }
+  
+  func removeDuplicateFrom2(_ word: String) -> String {
+    var used = [Character: Bool]()
+    var result = [Character]()
+    for letter in word where used.updateValue(true, forKey: letter) == nil {
+      result.append(letter)
+    }
+    
+    return String(result)
+  }
+
     
     func removeDuplicateUsingOrderedSet(_ word: String) -> String {
         let orderedSet = NSOrderedSet(array: Array(word))
@@ -53,5 +64,20 @@ class Challenge6_RemoveDuplicateLetters: XCTestCase {
     func testRemoveDuplicateUsingOrderedSet_whenStringIsMississippiReturnMisp() {
         XCTAssertEqual(removeDuplicateUsingOrderedSet("hello"), "helo")
     }
+  
+  
+  func testPerformanceOfRemoveDuplicates() {
+     
+      measure {
+        removeDuplicateFrom("wombat")
+      }
+  }
+  
+  func testPerformanceOfRemoveDuplicates2() {
+     
+      measure {
+        removeDuplicateFrom2("wombat")
+      }
+  }
 
 }

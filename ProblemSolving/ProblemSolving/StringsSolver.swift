@@ -98,5 +98,4 @@ class StringsSolver {
     func fuzzyContains(firstWord: String, secondWord: String) -> Bool {
       return firstWord.range(of: secondWord, options: .caseInsensitive) != nil
     }
-
 }
