@@ -65,7 +65,6 @@ class Challenge6_RemoveDuplicateLetters: XCTestCase {
         XCTAssertEqual(removeDuplicateUsingOrderedSet("hello"), "helo")
     }
   
-  
   func testPerformanceOfRemoveDuplicates() {
      
       measure {
