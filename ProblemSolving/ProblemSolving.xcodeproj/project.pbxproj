@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		EF2C84CA2C0A3C0300E4E5C4 /* Challenge8_String_isRotated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84C92C0A3C0300E4E5C4 /* Challenge8_String_isRotated.swift */; };
 		EF301D5B27577FA30075062D /* Challenge7_Condense_Whitespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF301D5A27577FA30075062D /* Challenge7_Condense_Whitespace.swift */; };
-		EF37C0772756221800B4A0EA /* NumberIsPrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF37C0762756221800B4A0EA /* NumberIsPrime.swift */; };
+		EF37C0772756221800B4A0EA /* Challenge20_NumberIsPrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF37C0762756221800B4A0EA /* Challenge20_NumberIsPrime.swift */; };
 		EF37C079275629DB00B4A0EA /* Challenge6_RemoveDuplicateLetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF37C078275629DB00B4A0EA /* Challenge6_RemoveDuplicateLetters.swift */; };
 		EF580A7A25FD44EC00144561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF580A7925FD44EC00144561 /* AppDelegate.swift */; };
 		EF580A7C25FD44EC00144561 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF580A7B25FD44EC00144561 /* SceneDelegate.swift */; };
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		EF2C84C92C0A3C0300E4E5C4 /* Challenge8_String_isRotated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge8_String_isRotated.swift; sourceTree = "<group>"; };
 		EF301D5A27577FA30075062D /* Challenge7_Condense_Whitespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge7_Condense_Whitespace.swift; sourceTree = "<group>"; };
-		EF37C0762756221800B4A0EA /* NumberIsPrime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberIsPrime.swift; sourceTree = "<group>"; };
+		EF37C0762756221800B4A0EA /* Challenge20_NumberIsPrime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge20_NumberIsPrime.swift; sourceTree = "<group>"; };
 		EF37C078275629DB00B4A0EA /* Challenge6_RemoveDuplicateLetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge6_RemoveDuplicateLetters.swift; sourceTree = "<group>"; };
 		EF580A7625FD44EC00144561 /* ProblemSolving.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProblemSolving.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF580A7925FD44EC00144561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,11 +121,11 @@
 				EF301D5A27577FA30075062D /* Challenge7_Condense_Whitespace.swift */,
 				EF2C84C92C0A3C0300E4E5C4 /* Challenge8_String_isRotated.swift */,
 				EFFEDF4B2752562F00E6C5E7 /* Challenge19_SwapTwoNumbersTests.swift */,
+				EF37C0762756221800B4A0EA /* Challenge20_NumberIsPrime.swift */,
 				EFFF717827FCD76500917A57 /* Challenge21_CountingBinaryOnes.swift */,
 				EFFF717627FC8A2500917A57 /* ContainerWithMostWater.swift */,
 				EF580AA025FD48D800144561 /* Info.plist */,
 				EFFF717A27FCEBCC00917A57 /* MergeIntervals.swift */,
-				EF37C0762756221800B4A0EA /* NumberIsPrime.swift */,
 				EF5B0E602604F13E00914D59 /* NumberSolverTests.swift */,
 				EF580A9E25FD48D800144561 /* StringsSolverTests.swift */,
 			);
@@ -246,7 +246,7 @@
 			files = (
 				EFFF717727FC8A2600917A57 /* ContainerWithMostWater.swift in Sources */,
 				EF2C84CA2C0A3C0300E4E5C4 /* Challenge8_String_isRotated.swift in Sources */,
-				EF37C0772756221800B4A0EA /* NumberIsPrime.swift in Sources */,
+				EF37C0772756221800B4A0EA /* Challenge20_NumberIsPrime.swift in Sources */,
 				EF37C079275629DB00B4A0EA /* Challenge6_RemoveDuplicateLetters.swift in Sources */,
 				EF580A9F25FD48D800144561 /* StringsSolverTests.swift in Sources */,
 				EFFEDF4C2752562F00E6C5E7 /* Challenge19_SwapTwoNumbersTests.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  NumberIsPrime.swift
+//  Challenge20_NumberIsPrime.swift
 //  ProblemSolvingTests
 //
 //  Created by Amr Hesham on 30/11/2021.
@@ -9,7 +9,7 @@ import XCTest
 
 // MARK: - Challenge 20: Number is prime
 //
-class NumberIsPrime: XCTestCase {
+class Challenge20_NumberIsPrime: XCTestCase {
     
     /// a function that accepts an integer as its parameter and returns true if the number is prime.
     /// - Parameters:
