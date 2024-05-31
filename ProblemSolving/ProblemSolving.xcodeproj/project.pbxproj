@@ -21,7 +21,7 @@
 		EF580A9F25FD48D800144561 /* StringsSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF580A9E25FD48D800144561 /* StringsSolverTests.swift */; };
 		EF5B0E5D2604F0BA00914D59 /* NumberSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B0E5C2604F0BA00914D59 /* NumberSolver.swift */; };
 		EF5B0E612604F13E00914D59 /* NumberSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B0E602604F13E00914D59 /* NumberSolverTests.swift */; };
-		EFFEDF4C2752562F00E6C5E7 /* SwapTwoNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFEDF4B2752562F00E6C5E7 /* SwapTwoNumbersTests.swift */; };
+		EFFEDF4C2752562F00E6C5E7 /* Challenge19_SwapTwoNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFEDF4B2752562F00E6C5E7 /* Challenge19_SwapTwoNumbersTests.swift */; };
 		EFFF717727FC8A2600917A57 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFF717627FC8A2500917A57 /* ContainerWithMostWater.swift */; };
 		EFFF717927FCD76500917A57 /* Challenge21_CountingBinaryOnes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFF717827FCD76500917A57 /* Challenge21_CountingBinaryOnes.swift */; };
 		EFFF717B27FCEBCC00917A57 /* MergeIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFF717A27FCEBCC00917A57 /* MergeIntervals.swift */; };
@@ -56,7 +56,7 @@
 		EF580AA025FD48D800144561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF5B0E5C2604F0BA00914D59 /* NumberSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSolver.swift; sourceTree = "<group>"; };
 		EF5B0E602604F13E00914D59 /* NumberSolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSolverTests.swift; sourceTree = "<group>"; };
-		EFFEDF4B2752562F00E6C5E7 /* SwapTwoNumbersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapTwoNumbersTests.swift; sourceTree = "<group>"; };
+		EFFEDF4B2752562F00E6C5E7 /* Challenge19_SwapTwoNumbersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge19_SwapTwoNumbersTests.swift; sourceTree = "<group>"; };
 		EFFF717627FC8A2500917A57 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		EFFF717827FCD76500917A57 /* Challenge21_CountingBinaryOnes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge21_CountingBinaryOnes.swift; sourceTree = "<group>"; };
 		EFFF717A27FCEBCC00917A57 /* MergeIntervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeIntervals.swift; sourceTree = "<group>"; };
@@ -117,17 +117,17 @@
 		EF580A9D25FD48D800144561 /* ProblemSolvingTests */ = {
 			isa = PBXGroup;
 			children = (
-				EF580A9E25FD48D800144561 /* StringsSolverTests.swift */,
-				EF580AA025FD48D800144561 /* Info.plist */,
-				EF5B0E602604F13E00914D59 /* NumberSolverTests.swift */,
-				EFFEDF4B2752562F00E6C5E7 /* SwapTwoNumbersTests.swift */,
-				EF37C0762756221800B4A0EA /* NumberIsPrime.swift */,
 				EF37C078275629DB00B4A0EA /* Challenge6_RemoveDuplicateLetters.swift */,
 				EF301D5A27577FA30075062D /* Challenge7_Condense_Whitespace.swift */,
 				EF2C84C92C0A3C0300E4E5C4 /* Challenge8_String_isRotated.swift */,
-				EFFF717627FC8A2500917A57 /* ContainerWithMostWater.swift */,
+				EFFEDF4B2752562F00E6C5E7 /* Challenge19_SwapTwoNumbersTests.swift */,
 				EFFF717827FCD76500917A57 /* Challenge21_CountingBinaryOnes.swift */,
+				EFFF717627FC8A2500917A57 /* ContainerWithMostWater.swift */,
+				EF580AA025FD48D800144561 /* Info.plist */,
 				EFFF717A27FCEBCC00917A57 /* MergeIntervals.swift */,
+				EF37C0762756221800B4A0EA /* NumberIsPrime.swift */,
+				EF5B0E602604F13E00914D59 /* NumberSolverTests.swift */,
+				EF580A9E25FD48D800144561 /* StringsSolverTests.swift */,
 			);
 			path = ProblemSolvingTests;
 			sourceTree = "<group>";
@@ -249,7 +249,7 @@
 				EF37C0772756221800B4A0EA /* NumberIsPrime.swift in Sources */,
 				EF37C079275629DB00B4A0EA /* Challenge6_RemoveDuplicateLetters.swift in Sources */,
 				EF580A9F25FD48D800144561 /* StringsSolverTests.swift in Sources */,
-				EFFEDF4C2752562F00E6C5E7 /* SwapTwoNumbersTests.swift in Sources */,
+				EFFEDF4C2752562F00E6C5E7 /* Challenge19_SwapTwoNumbersTests.swift in Sources */,
 				EFFF717B27FCEBCC00917A57 /* MergeIntervals.swift in Sources */,
 				EFFF717927FCD76500917A57 /* Challenge21_CountingBinaryOnes.swift in Sources */,
 				EF5B0E612604F13E00914D59 /* NumberSolverTests.swift in Sources */,
