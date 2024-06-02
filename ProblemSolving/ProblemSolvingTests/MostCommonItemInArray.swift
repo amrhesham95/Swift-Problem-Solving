@@ -19,7 +19,7 @@ class MostCommonItemInArray: XCTestCase {
    */
   /// function that returns the most repeated item in the list.
   /// - Parameters:
-  ///     - heights: array of repeated items 
+  ///     - heights: array of repeated items
     func mostCommonItemIs<T: Hashable>(_ array: [T]) -> T {
         var dictionary = Dictionary<T,Int>()
         
