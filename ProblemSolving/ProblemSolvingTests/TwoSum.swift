@@ -23,11 +23,11 @@ class TwoSum: XCTestCase {
      • output: [0, 1]
      
      */
+
     /// function that returns same sentence with every other word reversed.
     /// - Parameters:
-    /// - nums: array of integers
-    /// - nums:
-    /// - target: array of integers
+    /// -   nums: array of integers to search in
+    /// - target: the target number
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var dict = [Int: Int]()
         for (i, num) in nums.enumerated() {
