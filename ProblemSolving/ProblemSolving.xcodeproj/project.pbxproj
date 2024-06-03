@@ -10,6 +10,7 @@
 		EF2C84CA2C0A3C0300E4E5C4 /* Challenge8_String_isRotated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84C92C0A3C0300E4E5C4 /* Challenge8_String_isRotated.swift */; };
 		EF2C84CC2C0CF0EC00E4E5C4 /* MostCommonItemInArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84CB2C0CF0EC00E4E5C4 /* MostCommonItemInArray.swift */; };
 		EF2C84CE2C0CF77F00E4E5C4 /* ReverseEveryOtherWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84CD2C0CF77F00E4E5C4 /* ReverseEveryOtherWord.swift */; };
+		EF2C84D02C0E497E00E4E5C4 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C84CF2C0E497E00E4E5C4 /* TwoSum.swift */; };
 		EF301D5B27577FA30075062D /* Challenge7_Condense_Whitespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF301D5A27577FA30075062D /* Challenge7_Condense_Whitespace.swift */; };
 		EF37C0772756221800B4A0EA /* Challenge20_NumberIsPrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF37C0762756221800B4A0EA /* Challenge20_NumberIsPrime.swift */; };
 		EF37C079275629DB00B4A0EA /* Challenge6_RemoveDuplicateLetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF37C078275629DB00B4A0EA /* Challenge6_RemoveDuplicateLetters.swift */; };
@@ -43,6 +44,7 @@
 		EF2C84C92C0A3C0300E4E5C4 /* Challenge8_String_isRotated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge8_String_isRotated.swift; sourceTree = "<group>"; };
 		EF2C84CB2C0CF0EC00E4E5C4 /* MostCommonItemInArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostCommonItemInArray.swift; sourceTree = "<group>"; };
 		EF2C84CD2C0CF77F00E4E5C4 /* ReverseEveryOtherWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseEveryOtherWord.swift; sourceTree = "<group>"; };
+		EF2C84CF2C0E497E00E4E5C4 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		EF301D5A27577FA30075062D /* Challenge7_Condense_Whitespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge7_Condense_Whitespace.swift; sourceTree = "<group>"; };
 		EF37C0762756221800B4A0EA /* Challenge20_NumberIsPrime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge20_NumberIsPrime.swift; sourceTree = "<group>"; };
 		EF37C078275629DB00B4A0EA /* Challenge6_RemoveDuplicateLetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge6_RemoveDuplicateLetters.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				EFFF717827FCD76500917A57 /* Challenge21_CountingBinaryOnes.swift */,
 				EF2C84CB2C0CF0EC00E4E5C4 /* MostCommonItemInArray.swift */,
 				EF2C84CD2C0CF77F00E4E5C4 /* ReverseEveryOtherWord.swift */,
+				EF2C84CF2C0E497E00E4E5C4 /* TwoSum.swift */,
 				EFFF717627FC8A2500917A57 /* ContainerWithMostWater.swift */,
 				EF580AA025FD48D800144561 /* Info.plist */,
 				EFFF717A27FCEBCC00917A57 /* MergeIntervals.swift */,
@@ -262,6 +265,7 @@
 				EF5B0E612604F13E00914D59 /* NumberSolverTests.swift in Sources */,
 				EF301D5B27577FA30075062D /* Challenge7_Condense_Whitespace.swift in Sources */,
 				EF2C84CE2C0CF77F00E4E5C4 /* ReverseEveryOtherWord.swift in Sources */,
+				EF2C84D02C0E497E00E4E5C4 /* TwoSum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
