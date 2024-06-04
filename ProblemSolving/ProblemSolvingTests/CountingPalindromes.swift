@@ -21,7 +21,7 @@ class CountingPalindromes: XCTestCase {
      */
     /// function that returns same sentence with every other word reversed.
     /// - Parameters:
-    /// - s: string contains the characters
+    /// - s: string contains the words that could palindromes
     func palindromeCount(_ s: String) -> [String: Int] {
         var dict = [String: Int]()
         for word in s.components(separatedBy: " ") {
